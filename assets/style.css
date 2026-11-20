@@ -485,7 +485,7 @@ h2.h-sm { font-size: 20px; margin-bottom: 10px; }
   .cmp-wrap table.data, .cmp-wrap table.data tbody, .cmp-wrap table.data tr,
   .cmp-wrap table.data th, .cmp-wrap table.data td { display: block; width: auto; min-width: 0; }
   .cmp-wrap table.data { min-width: 0; border-collapse: separate; border-spacing: 0; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
-  .cmp-wrap table.data caption { padding: 12px 14px 0; }
+  .cmp-wrap table.data caption { display: block; width: 100%; padding: 12px 14px 0; }
   .cmp-wrap table.data thead { display: none; }
   .cmp-wrap table.data th[scope="row"] { background: transparent; border: 0; white-space: normal; padding: 0; }
   .cmp-wrap table.data tr { padding: 12px 14px; border-bottom: 1px solid var(--line); }
