@@ -315,6 +315,8 @@ table.data.cmp td.c { text-align: center; white-space: nowrap; }
 table.data.cmp td.yes { color: var(--accent-dark); font-weight: 700; }
 table.data.cmp td.na { color: #a9b6b6; }
 table.data.cmp .cmp-reco { background: #f2faf9; }
+table.data.cmp thead th { text-align: center; }
+table.data.cmp thead th:first-child { text-align: left; }
 table.data.cmp thead th.cmp-reco { background: var(--accent-soft); color: var(--accent-dark); }
 table.data tr.cmp-group th {
   background: #fff; font-size: 12.4px; letter-spacing: .1em; text-transform: uppercase;
