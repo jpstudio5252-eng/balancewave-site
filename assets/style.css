@@ -467,6 +467,7 @@ h2.h-sm { font-size: 20px; margin-bottom: 10px; }
 
 @media (max-width: 720px) {
   body { font-size: 16.5px; }
+  .site-header { position: static; }
   .hero { padding: 44px 0 38px; }
   .section { padding: 48px 0; }
   .footer-grid { grid-template-columns: 1fr; gap: 22px; }
