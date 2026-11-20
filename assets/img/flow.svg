@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360" role="img" aria-labelledby="fTitle">
+  <title id="fTitle">문제에서 관리로 이어지는 4단계 흐름</title>
+  <rect width="1200" height="360" fill="#fbfcfb"/>
+  <g font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif">
+    <!-- connector segments between nodes -->
+    <g stroke="#1f6f78" stroke-width="2.5" stroke-linecap="round" opacity="0.4">
+      <line x1="200" y1="120" x2="371" y2="120"/>
+      <line x1="475" y1="120" x2="646" y2="120"/>
+      <line x1="750" y1="120" x2="921" y2="120"/>
+    </g>
+    <g fill="#1f6f78" opacity="0.75">
+      <polygon points="371,113 385,120 371,127"/>
+      <polygon points="646,113 660,120 646,127"/>
+      <polygon points="921,113 935,120 921,127"/>
+    </g>
+    <!-- nodes -->
+    <g>
+      <circle cx="150" cy="120" r="46" fill="#16232b"/>
+      <text x="150" y="129" text-anchor="middle" font-size="22" font-weight="700" fill="#dceced">01</text>
+      <text x="150" y="215" text-anchor="middle" font-size="26" font-weight="700" fill="#16232b">문제</text>
+      <text x="150" y="246" text-anchor="middle" font-size="15" fill="#6a7a80">AI 답변에 나오지 않음</text>
+    </g>
+    <g>
+      <circle cx="425" cy="120" r="46" fill="#1f6f78"/>
+      <text x="425" y="129" text-anchor="middle" font-size="22" font-weight="700" fill="#eef7f7">02</text>
+      <text x="425" y="215" text-anchor="middle" font-size="26" font-weight="700" fill="#16232b">진단</text>
+      <text x="425" y="246" text-anchor="middle" font-size="15" fill="#6a7a80">질문 25 × AI 4종</text>
+    </g>
+    <g>
+      <circle cx="700" cy="120" r="46" fill="#1f6f78"/>
+      <text x="700" y="129" text-anchor="middle" font-size="22" font-weight="700" fill="#eef7f7">03</text>
+      <text x="700" y="215" text-anchor="middle" font-size="26" font-weight="700" fill="#16232b">개선</text>
+      <text x="700" y="246" text-anchor="middle" font-size="15" fill="#6a7a80">접근·구조·표기 통일</text>
+    </g>
+    <g>
+      <circle cx="975" cy="120" r="46" fill="#b98b52"/>
+      <text x="975" y="129" text-anchor="middle" font-size="22" font-weight="700" fill="#fff8ec">04</text>
+      <text x="975" y="215" text-anchor="middle" font-size="26" font-weight="700" fill="#16232b">관리</text>
+      <text x="975" y="246" text-anchor="middle" font-size="15" fill="#6a7a80">격주 재측정 · 월 리포트</text>
+    </g>
+    <line x1="90" y1="300" x2="1110" y2="300" stroke="#d3dedd" stroke-width="1"/>
+    <text x="600" y="330" text-anchor="middle" font-size="14" letter-spacing="3" fill="#8b9c9f">BALANCEWAVE · HOSPITAL GEO</text>
+  </g>
+</svg>

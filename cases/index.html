@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>실제 진단 사례 3건 — 실측 수치 | 발란스웨이브</title>
+<meta name="description" content="2026년 11월 19일 직접 확인한 진단 3건. 응답 바이트, ld+json 개수, robots.txt 내용, llms.txt·사이트맵 응답, 채널 간 표기 불일치를 수치로 정리했습니다.">
+<link rel="canonical" href="https://jpstudio5252-eng.github.io/balancewave-site/cases/">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="발란스웨이브">
+<meta property="og:title" content="실제 진단 사례 3건 — 실측 수치 | 발란스웨이브">
+<meta property="og:description" content="2026년 11월 19일 직접 확인한 진단 3건. 응답 바이트, ld+json 개수, robots.txt 내용, llms.txt·사이트맵 응답, 채널 간 표기 불일치를 수치로 정리했습니다.">
+<meta property="og:url" content="https://jpstudio5252-eng.github.io/balancewave-site/cases/">
+<meta property="og:image" content="https://jpstudio5252-eng.github.io/balancewave-site/assets/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="실제 진단 사례 3건 — 실측 수치 | 발란스웨이브">
+<meta name="twitter:title" content="실제 진단 사례 3건 — 실측 수치 | 발란스웨이브">
+<meta name="twitter:description" content="2026년 11월 19일 직접 확인한 진단 3건. 응답 바이트, ld+json 개수, robots.txt 내용, llms.txt·사이트맵 응답, 채널 간 표기 불일치를 수치로 정리했습니다.">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#f7f8f7">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2316232b'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='30' fill='%23dceced' text-anchor='middle'%3EB%3C/text%3E%3C/svg%3E">
+<link rel="llms" href="https://jpstudio5252-eng.github.io/balancewave-site/llms.txt" type="text/plain">
+<link rel="stylesheet" href="../assets/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://jpstudio5252-eng.github.io/balancewave-site/#business",
+      "name": "발란스웨이브",
+      "alternateName": [
+        "발란스웨이브",
+        "BALANCEWAVE",
+        "Balancewave"
+      ],
+      "url": "https://jpstudio5252-eng.github.io/balancewave-site/",
+      "description": "병원·의원의 홈페이지와 채널 정보를 AI 검색이 읽고 인용할 수 있는 형태로 진단하고, 정리하고, 매달 측정합니다.",
+      "slogan": "병원·의원 AI 검색(GEO) 마케팅",
+      "founder": {
+        "@id": "https://jpstudio5252-eng.github.io/balancewave-site/#founder"
+      },
+      "parentOrganization": {
+        "@id": "https://jpstudio5252-eng.github.io/balancewave-site/#organization"
+      },
+      "telephone": "+821043171960",
+      "email": "jpstudio5252@naver.com",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+821043171960",
+        "email": "jpstudio5252@naver.com",
+        "contactType": "sales",
+        "areaServed": "KR",
+        "availableLanguage": [
+          "ko",
+          "en"
+        ]
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "서울"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "용산구"
+        }
+      ],
+      "knowsAbout": [
+        "생성형 엔진 최적화(GEO)",
+        "AI 검색 노출",
+        "병원 홈페이지 구조화 데이터",
+        "의료기관 정보 정합성",
+        "AI 크롤러 정책",
+        "llms.txt"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "서비스",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "AI 검색 현황 진단",
+              "description": "환자가 실제로 묻는 질문 25개를 설계하고, ChatGPT·Gemini·Perplexity·네이버 AI에 같은 조건으로 질의합니다(25 × 4 = 100회). 질문마다 언급(병원 이름이 나왔는가) · 인용(병원 페이지가 출처로 붙었는가) · 오류(AI가 틀린 정보를 말했는가)를 기록합니다.",
+              "serviceType": "AI 검색 현황 진단"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "기술 기반 구축",
+              "description": "AI 크롤러가 본문을 읽도록 접근 구조를 정상화하고, HTTPS·robots.txt·sitemap.xml·llms.txt를 정비합니다. MedicalClinic·Physician·MedicalWebPage·FAQPage 구조화 데이터를 넣고, 지도·포털과 홈페이지의 이름·주소·진료시간 표기를 한 기준으로 맞춥니다.",
+              "serviceType": "기술 기반 구축"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "콘텐츠 제작",
+              "description": "진료과·검진 항목·장비·의료진·오시는 길을 기계가 읽을 수 있는 구조 페이지로 만들고, 환자 질문형 FAQ 12편을 씁니다. 원장님이 진료에서 겪은 일을 25년 현장의 언어로 정리하되, 진료 성과를 약속하는 표현은 쓰지 않습니다.",
+              "serviceType": "콘텐츠 제작"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "월간 운영·측정",
+              "description": "콘텐츠 8건을 발행하고(자체 발행 4건 + 네이버 브랜드블로그 4건), 질문 세트를 고정한 채 격주로 다시 측정합니다. 월 1회 리포트에 새로 인용되기 시작한 질문·아직 비어 있는 질문·다음 달 보강 우선순위를 담고, AI가 틀리게 말한 항목의 정정 내역을 함께 적습니다.",
+              "serviceType": "월간 운영·측정"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://jpstudio5252-eng.github.io/balancewave-site/#organization",
+      "name": "발란스웨이브",
+      "alternateName": [
+        "발란스웨이브",
+        "BALANCEWAVE",
+        "Balancewave"
+      ],
+      "url": "https://jpstudio5252-eng.github.io/balancewave-site/",
+      "description": "병원·의원 AI 검색(GEO) 마케팅",
+      "logo": "https://jpstudio5252-eng.github.io/balancewave-site/assets/img/og.png",
+      "image": "https://jpstudio5252-eng.github.io/balancewave-site/assets/img/og.png",
+      "founder": {
+        "@id": "https://jpstudio5252-eng.github.io/balancewave-site/#founder"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+821043171960",
+        "email": "jpstudio5252@naver.com",
+        "contactType": "sales",
+        "availableLanguage": [
+          "ko",
+          "en"
+        ]
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://jpstudio5252-eng.github.io/balancewave-site/#website",
+      "url": "https://jpstudio5252-eng.github.io/balancewave-site/",
+      "name": "발란스웨이브",
+      "alternateName": [
+        "발란스웨이브",
+        "BALANCEWAVE",
+        "Balancewave"
+      ],
+      "description": "병원·의원 AI 검색(GEO) 마케팅",
+      "inLanguage": "ko-KR",
+      "publisher": {
+        "@id": "https://jpstudio5252-eng.github.io/balancewave-site/#organization"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://jpstudio5252-eng.github.io/balancewave-site/#founder",
+      "name": "김진희",
+      "jobTitle": "발란스웨이브 대표",
+      "worksFor": {
+        "@id": "https://jpstudio5252-eng.github.io/balancewave-site/#organization"
+      },
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "경희대학교 동서의학대학원"
+      },
+      "knowsAbout": [
+        "생성형 엔진 최적화",
+        "병원 마케팅",
+        "대체의학",
+        "체형·근막 현장"
+      ],
+      "description": "경희대학교 동서의학대학원 대체의학 박사. 현장 경력 25년. 발리너스 창업자. 용산·이태원 병의원의 AI 검색 노출을 직접 진단하고 제안서를 씁니다."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://jpstudio5252-eng.github.io/balancewave-site/cases/#webpage",
+      "url": "https://jpstudio5252-eng.github.io/balancewave-site/cases/",
+      "name": "실제 진단 사례 3건 — 실측 수치 | 발란스웨이브",
+      "description": "2026년 11월 19일 직접 확인한 진단 3건. 응답 바이트, ld+json 개수, robots.txt 내용, llms.txt·사이트맵 응답, 채널 간 표기 불일치를 수치로 정리했습니다.",
+      "inLanguage": "ko-KR",
+      "isPartOf": {
+        "@id": "https://jpstudio5252-eng.github.io/balancewave-site/#website"
+      },
+      "publisher": {
+        "@id": "https://jpstudio5252-eng.github.io/balancewave-site/#organization"
+      },
+      "about": {
+        "@id": "https://jpstudio5252-eng.github.io/balancewave-site/#business"
+      },
+      "datePublished": "2026-11-19",
+      "dateModified": "2026-11-19"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://jpstudio5252-eng.github.io/balancewave-site/#breadcrumb-cases",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "홈",
+          "item": "https://jpstudio5252-eng.github.io/balancewave-site/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "실제 진단 사례",
+          "item": "https://jpstudio5252-eng.github.io/balancewave-site/cases/"
+        }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://jpstudio5252-eng.github.io/balancewave-site/#case-list",
+      "name": "실제 진단 사례",
+      "numberOfItems": 3,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "용산 내과의원 A",
+          "description": "홈페이지가 크롤러에게 스크립트 762바이트만 돌려줍니다."
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "용산 한의원 B",
+          "description": "1차 출처가 블로그뿐이고, 그 블로그는 AI에게 닫혀 있습니다."
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "용산 스튜디오 C",
+          "description": "사이트 4곳 중 AI가 읽는 곳은 한 곳, 그 한 곳의 이름이 회사와 달랐습니다."
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">본문으로 바로가기</a><header class="site-header"><div class="wrap header-inner"><a class="brand" href="../"><span class="brand-mark" aria-hidden="true">B</span><span class="brand-text"><span class="brand-name">발란스웨이브</span><span class="brand-sub">Hospital GEO · Seoul</span></span></a><div class="header-nav"><nav class="lang-switch" aria-label="언어 선택"><a href="../cases/" hreflang="ko" aria-current="true" lang="ko">KO</a><a href="../en/" hreflang="en" lang="en">EN</a></nav><nav class="site-nav" aria-label="주 메뉴"><a href="../">홈</a><a href="../diagnosis/">진단 6항목</a><a href="../services/">서비스</a><a href="../cases/" aria-current="page">사례</a><a href="../about/">대표</a><a href="../contact/" class="nav-cta">상담 문의</a></nav></div></div></header>
+<main id="main">
+
+<nav class="breadcrumbs wrap" aria-label="현재 위치"><ol><li><a href="../">홈</a></li><li aria-current="page">실제 진단 사례</li></ol></nav>
+<section class="hero">
+  <div class="wrap hero-inner">
+    <p class="eyebrow">실제 진단 · 2026-11-19</p>
+    <h1>무엇을 확인했고, 무엇이 나왔나</h1>
+    <p class="lede">세 곳의 홈페이지·블로그·지도 등록 정보를 직접 열어 응답을 받고 확인한 결과입니다.
+      <strong>수치만 적었고, 확인하지 못한 항목은 '확인 불가'로 남겼습니다.</strong></p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="kicker">방법</p>
+      <h2>같은 날, 같은 방식으로</h2>
+      <p>모든 수치는 2026년 11월 19일 직접 응답을 받아 확인한 값입니다. HTTP 상태·응답 바이트·robots.txt 내용·ld+json 개수·사이트맵 응답을 그대로 적었고, 확인하지 못한 항목은 &#x27;확인 불가&#x27;로 남겼습니다.</p>
+    </div>
+    <div class="table-wrap">
+      <table class="data">
+        <caption>6항목 점검 결과</caption>
+        <thead><tr><th scope="col">항목</th><th scope="col">용산 내과의원 A</th><th scope="col">용산 한의원 B</th><th scope="col">발리너스 본점</th></tr></thead>
+        <tbody><tr><th scope="row">01 자체 도메인</th><td><span class="status" data-state="부분">부분</span></td><td><span class="status" data-state="미충족">미충족</span></td><td><span class="status" data-state="부분">부분</span></td></tr><tr><th scope="row">02 AI 크롤러 정책</th><td><span class="status" data-state="확인 불가">확인 불가</span></td><td><span class="status" data-state="미충족">미충족</span></td><td><span class="status" data-state="부분">부분</span></td></tr><tr><th scope="row">03 본문 가독성</th><td><span class="status" data-state="미충족">미충족</span></td><td><span class="status" data-state="미충족">미충족</span></td><td><span class="status" data-state="부분">부분</span></td></tr><tr><th scope="row">04 구조화 데이터</th><td><span class="status" data-state="미충족">미충족</span></td><td><span class="status" data-state="미충족">미충족</span></td><td><span class="status" data-state="부분">부분</span></td></tr><tr><th scope="row">05 사이트맵과 llms.txt</th><td><span class="status" data-state="확인 불가">확인 불가</span></td><td><span class="status" data-state="미충족">미충족</span></td><td><span class="status" data-state="부분">부분</span></td></tr><tr><th scope="row">06 채널 간 정보 일치</th><td><span class="status" data-state="부분">부분</span></td><td><span class="status" data-state="부분">부분</span></td><td><span class="status" data-state="미충족">미충족</span></td></tr></tbody>
+      </table>
+    </div>
+    <div class="note">병원명은 대표가 허락하기 전까지 &#x27;용산 내과의원 A&#x27;처럼 익명으로 표기합니다. site.config.json의 cases[].show_real_name을 true로 바꾸면 실명으로 전환됩니다.</div>
+  </div>
+</section>
+
+<section class="section section--tint">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="kicker">세 건</p>
+      <h2>사례별 실측 내용</h2>
+      <p>세 곳 모두 "진료·서비스 역량의 문제"가 아니라 "AI에게 전달되는 통로의 문제"였습니다.</p>
+    </div>
+    
+<article class="case">
+  <div class="case-head"><h2>용산 내과의원 A</h2>
+    <span class="case-meta">내과 · 건강검진 · 실측 2026-11-19 08:56 · 진단 완료 · 제안서 전달</span></div>
+  <p class="case-headline">홈페이지가 크롤러에게 스크립트 762바이트만 돌려줍니다.</p>
+  <p>국가건강검진 지정, 비대면진료 시범사업, 외국인 진료까지 갖춘 병원입니다. 그런데 홈페이지에 접속하면 본문 대신 쿠키 인증 스크립트만 나오고, HTTPS로는 열리지 않으며, 구조화 데이터는 0건이었습니다. AI가 읽을 수 있는 것이 없었습니다.</p>
+  <p class="card-sub"><strong>확인된 값</strong></p>
+  <ul class="findings"><li>GET http:// → 200, 본문 762바이트 (쿠키 생성 스크립트 + ?ckattempt=1 이동). 재시도도 동일</li><li>GET https:// → 연결 실패</li><li>application/ld+json 0건 — MedicalClinic·Physician 없음</li><li>robots.txt·llms.txt·sitemap.xml 모두 쿠키 인증 뒤에 있어 확인 불가</li></ul>
+  <p class="case-strength"><strong>이미 갖고 있던 것</strong> — 국가건강검진 지정(일반·위·대장·간), 비대면진료 시범사업 기관, 일차의료 만성질환관리 실시기관, 외국인 진료(Parkway Clinic), 초음파·골밀도·X-ray — 전부 자격은 있으나 AI에게는 없는 상태였습니다.</p>
+  
+</article>
+<article class="case">
+  <div class="case-head"><h2>용산 한의원 B</h2>
+    <span class="case-meta">한의원 · 8개 진료과목 · 실측 2026-11-19 20:50 · 진단 완료 · 제안서 전달</span></div>
+  <p class="case-headline">1차 출처가 블로그뿐이고, 그 블로그는 AI에게 닫혀 있습니다.</p>
+  <p>지도와 플레이스의 &#x27;홈페이지&#x27; 칸이 모두 네이버 블로그를 가리켰고, 자체 도메인 후보 6개는 모두 DNS 응답이 없었습니다. 그 블로그는 AI 봇 9종에 Disallow: / 를 선언하고 있고, 첫 응답은 제목과 iframe 한 줄뿐인 2,859바이트 껍데기였습니다.</p>
+  <p class="card-sub"><strong>확인된 값</strong></p>
+  <ul class="findings"><li>후보 도메인 6개 DNS 무응답 — 병원이 통제하는 웹 자산이 블로그뿐</li><li>blog.naver.com/robots.txt → AI 봇 9종 Disallow: / (플랫폼 정책, 병원이 바꿀 수 없음)</li><li>블로그 첫 응답 2,859바이트 frameset, 목록 주소도 일반 크롤러에 차단</li><li>포스트 페이지 application/ld+json 0건 · schema.org 문자열 0회</li><li>llms.txt·sitemap.xml 404</li><li>구글 지도 &#x27;일요일 09:00–16:30&#x27; vs 심평원 공개 정보 &#x27;일요일 휴진&#x27; · 주소 &#x27;몰 D 2층 33호&#x27;와 &#x27;2032~2034, 2039호&#x27; 혼용</li></ul>
+  <p class="case-strength"><strong>이미 갖고 있던 것</strong> — 네이버 방문자리뷰 464 · 블로그리뷰 154 · 구글 평점 5.0(26개) · 첩약 건강보험 2단계 시범사업 참여 · 한방내과 전문의 1명과 8개 진료과목. 신뢰는 이미 쌓여 있었지만 AI에게 전달되는 통로가 없었습니다.</p>
+  
+</article>
+<article class="case">
+  <div class="case-head"><h2>발리너스 본점</h2>
+    <span class="case-meta">자사 사례 · 체형 밸런스 스튜디오 · 실측 2026-11-19 21:24 · 26,836자 재확인 · 진단 완료 · 자사 사례로 공개</span></div>
+  <p class="case-headline">사이트 4곳 중 AI가 읽는 곳은 한 곳, 그 한 곳의 이름이 회사와 달랐습니다.</p>
+  <p>운영 사이트 4곳을 직접 열어 확인했습니다. 한 곳은 첫 응답 본문이 8자였고, 한 곳은 글 0편이었으며, 유일하게 읽히는 사이트는 26,836자를 읽히지만 이름과 구조화 데이터가 다른 사업명으로 되어 있었습니다. 이름은 5종, 전화는 3종, 호수는 2개, 영업시간은 3가지로 갈려 있었습니다.</p>
+  <p class="card-sub"><strong>확인된 값</strong></p>
+  <ul class="findings"><li>baliness81.com → 첫 응답 본문 8자 (425KB 중 나머지는 스크립트)</li><li>balancewave.co.kr → 26,836자 읽힘 (유일) · WordPress 7.1.5 · llms.txt 404</li><li>blog.balancewave.co.kr → 1,028자, 글 0편</li><li>llms.txt — 세 사이트 모두 404</li><li>상호 5종 · 전화 3종 · 호수 92호/93호 · 영업시간 3가지(미등록 포함)</li></ul>
+  <p class="case-strength"><strong>이미 갖고 있던 것</strong> — 네이버 리뷰 38건(방문자 28·블로그 10), 구글 평점 5.0, 지도자 교육 17기·국내외 지도자 100명 이상, 워드프레스 글 49편. 자산은 있었지만 한 이름·한 주소로 묶이지 않아 AI가 하나의 실체로 인정하지 못했습니다.</p>
+  <p class="card-sub">자사 사례이므로 실명으로 표기합니다.</p>
+</article>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="kicker">공통점</p>
+      <h2>세 곳에서 같았던 것</h2>
+    </div>
+    <div class="grid grid--3">
+      <article class="card"><h3>1차 출처가 없다</h3><p>자체 도메인이 없거나, 있어도 크롤러가 본문을 받지 못합니다. 블로그는 플랫폼 정책으로 막혀 있습니다.</p></article>
+      <article class="card"><h3>구조가 없다</h3><p>병원명·주소·진료과·의료진이 사람이 읽는 문장으로만 있고, 기계가 읽는 형태로는 없습니다.</p></article>
+      <article class="card"><h3>표기가 갈린다</h3><p>이름·전화·호수·진료시간이 채널마다 다릅니다. AI는 어느 것을 사실로 확정하지 못합니다.</p></article>
+    </div>
+    <p class="mt-2">세 가지 모두 진료 역량과 무관한 문제이고, 그래서 순서대로 고칠 수 있습니다.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap"><div class="cta-band"><div><h2>무료 진단으로 시작합니다</h2><p>어느 질문에 나오고 어느 질문에 안 나오는지 먼저 확인하십시오. 계약을 전제로 하지 않습니다.</p></div><a class="btn" href="../contact/">상담 문의</a></div></div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-brand">발란스웨이브</p>
+        <p>병원·의원 AI 검색(GEO) 마케팅</p>
+        <p>병원·의원의 홈페이지와 채널 정보를 AI 검색이 읽고 인용할 수 있는 형태로 진단하고, 정리하고, 매달 측정합니다.</p>
+      </div>
+      <div>
+        <h2>페이지</h2>
+        <ul class="footer-list">
+          <li><a href="../diagnosis/">AI 검색 6항목 자체 진단</a></li>
+          <li><a href="../services/">서비스와 진행 단계</a></li>
+          <li><a href="../cases/">실제 진단 사례</a></li>
+          <li><a href="../about/">대표 소개</a></li>
+          <li><a href="../contact/">상담 문의</a></li>
+          <li><a href="../en/" lang="en" hreflang="en">English</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>문의</h2>
+        <ul class="footer-list">
+          <li>전화 <a href="tel:+821043171960">010-4317-1960</a></li>
+          <li>이메일 <a href="mailto:jpstudio5252@naver.com">jpstudio5252@naver.com</a></li>
+          <li>상담 가능 시간 <span class="todo">준비 중</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-legal">발란스웨이브 · 대표 김진희 · 사업자 정보 확인 후 표기<br>이 사이트는 병원·의원을 대상으로 하는 AI 검색(GEO) 컨설팅 안내이며, 진료나 의료 행위를 제공하지 않습니다. 확인되지 않은 정보는 '준비 중'으로 표시하고, 확인되는 대로 갱신합니다.<p class="footer-legal" style="border-top:0;padding-top:0;margin-top:12px">미리보기 버전 · balancewave.co.kr 게시 전 확인용입니다.</p>
+      <p style="margin:10px 0 0">© 2026 발란스웨이브. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

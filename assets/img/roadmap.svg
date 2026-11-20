@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320" role="img" aria-labelledby="rTitle">
+  <title id="rTitle">진단 5영업일, 구축 2~5주, 운영 매월로 이어지는 3단계 일정</title>
+  <rect width="1200" height="320" fill="#fbfcfb"/>
+  <g font-family="'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif">
+    <!-- step 1 -->
+    <rect x="60" y="70" width="300" height="130" rx="14" fill="#ffffff" stroke="#d3dedd"/>
+    <rect x="60" y="70" width="6" height="130" rx="3" fill="#16232b"/>
+    <text x="90" y="112" font-size="15" font-weight="700" fill="#1f6f78" letter-spacing="1">1단계 · 5영업일</text>
+    <text x="90" y="150" font-size="27" font-weight="700" fill="#16232b">진단</text>
+    <text x="90" y="178" font-size="15" fill="#6a7a80">무료 · 질문 25 × AI 4종</text>
+    <!-- step 2 -->
+    <rect x="450" y="70" width="300" height="130" rx="14" fill="#ffffff" stroke="#d3dedd"/>
+    <rect x="450" y="70" width="6" height="130" rx="3" fill="#1f6f78"/>
+    <text x="480" y="112" font-size="15" font-weight="700" fill="#1f6f78" letter-spacing="1">2단계 · 2~5주</text>
+    <text x="480" y="150" font-size="27" font-weight="700" fill="#16232b">구축 + 콘텐츠</text>
+    <text x="480" y="178" font-size="15" fill="#6a7a80">접근·구조화·표기·FAQ 12편</text>
+    <!-- step 3 -->
+    <rect x="840" y="70" width="300" height="130" rx="14" fill="#ffffff" stroke="#d3dedd"/>
+    <rect x="840" y="70" width="6" height="130" rx="3" fill="#b98b52"/>
+    <text x="870" y="112" font-size="15" font-weight="700" fill="#1f6f78" letter-spacing="1">3단계 · 매월</text>
+    <text x="870" y="150" font-size="27" font-weight="700" fill="#16232b">운영 · 측정</text>
+    <text x="870" y="178" font-size="15" fill="#6a7a80">콘텐츠 8건 · 격주 재측정</text>
+    <!-- arrows -->
+    <g stroke="#1f6f78" stroke-width="2" fill="none" opacity="0.5">
+      <path d="M362 135 H440"/><polygon points="440,129 452,135 440,141" fill="#1f6f78" stroke="none"/>
+      <path d="M752 135 H830"/><polygon points="830,129 842,135 830,141" fill="#1f6f78" stroke="none"/>
+    </g>
+    <!-- baseline -->
+    <line x1="60" y1="240" x2="1140" y2="240" stroke="#d3dedd"/>
+    <text x="60" y="272" font-size="14" fill="#6a7a80">첫 신호 4~6주 · 인용 2~3개월 · 경쟁 비교 3개월 이후 (관찰 기준, 약속 아님)</text>
+    <text x="1140" y="272" text-anchor="end" font-size="13" letter-spacing="2" fill="#8b9c9f">BALANCEWAVE</text>
+  </g>
+</svg>
