@@ -310,7 +310,8 @@ table.data tr.total-row th, table.data tr.total-row td { background: var(--paper
 }
 .btn--block { width: 100%; justify-content: center; }
 
-table.data.cmp { min-width: 680px; }
+table.data.cmp { min-width: 660px; }
+.scroll-hint { display: none; }
 table.data.cmp td.c { text-align: center; white-space: nowrap; }
 table.data.cmp td.yes { color: var(--accent-dark); font-weight: 700; }
 table.data.cmp td.na { color: #a9b6b6; }
@@ -479,5 +480,6 @@ h2.h-sm { font-size: 20px; margin-bottom: 10px; }
   .site-nav { min-width: 0; }
   .site-nav a { padding: 6px 9px; font-size: 14px; }
   .card, .price-card, .stat, .check { min-width: 0; }
+  .scroll-hint { display: block; font-size: 12.8px; color: var(--muted); margin: 8px 0 0; }
   .card p, .card-outcome, .price-desc, .price-features li, .price-figures dd { overflow-wrap: anywhere; }
 }
