@@ -311,7 +311,6 @@ table.data tr.total-row th, table.data tr.total-row td { background: var(--paper
 .btn--block { width: 100%; justify-content: center; }
 
 table.data.cmp { min-width: 660px; }
-.scroll-hint { display: none; }
 table.data.cmp td.c { text-align: center; white-space: nowrap; }
 table.data.cmp td.yes { color: var(--accent-dark); font-weight: 700; }
 table.data.cmp td.na { color: #a9b6b6; }
@@ -480,6 +479,36 @@ h2.h-sm { font-size: 20px; margin-bottom: 10px; }
   .site-nav { min-width: 0; }
   .site-nav a { padding: 6px 9px; font-size: 14px; }
   .card, .price-card, .stat, .check { min-width: 0; }
-  .scroll-hint { display: block; font-size: 12.8px; color: var(--muted); margin: 8px 0 0; }
+
+  /* 요금표 두 개는 좁은 화면에서 세로로 펼칩니다 (가로 스크롤 없이 값이 다 보이게) */
+  .cmp-wrap { border: 0; background: transparent; overflow: visible; }
+  .cmp-wrap table.data, .cmp-wrap table.data tbody, .cmp-wrap table.data tr,
+  .cmp-wrap table.data th, .cmp-wrap table.data td { display: block; width: auto; min-width: 0; }
+  .cmp-wrap table.data { min-width: 0; border-collapse: separate; border-spacing: 0; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+  .cmp-wrap table.data caption { padding: 12px 14px 0; }
+  .cmp-wrap table.data thead { display: none; }
+  .cmp-wrap table.data th[scope="row"] { background: transparent; border: 0; white-space: normal; padding: 0; }
+  .cmp-wrap table.data tr { padding: 12px 14px; border-bottom: 1px solid var(--line); }
+  .cmp-wrap table.data tr:last-child { border-bottom: 0; }
+  .cmp-wrap table.data td { border: 0; padding: 0; }
+
+  table.data.cmp tr:not(.cmp-group):not(.total-row) { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
+  table.data.cmp th[scope="row"] { grid-column: 1 / -1; font-size: 14px; padding-bottom: 4px !important; }
+  table.data.cmp td.c {
+    text-align: center; background: var(--paper-2); border-radius: 8px;
+    padding: 7px 4px; font-size: 12.6px; white-space: normal; color: var(--ink-soft);
+  }
+  table.data.cmp td.c::before {
+    content: attr(data-col); display: block; font-size: 10.3px; font-weight: 700;
+    letter-spacing: .02em; color: var(--muted); margin-bottom: 2px;
+  }
+  table.data.cmp td.c.cmp-reco { background: #e6f2f1; }
+  table.data.cmp tr.cmp-group { padding: 16px 14px 6px; border-bottom: 1px solid var(--accent-soft); }
+  table.data.cmp tr.cmp-group th { font-size: 11.6px; padding: 0 !important; }
+
+  table.data.init-table th[scope="row"] { font-size: 14.6px; font-weight: 700; padding-bottom: 2px !important; }
+  table.data.init-table td { font-size: 13.6px; padding-bottom: 3px !important; }
+  table.data.init-table td.num { text-align: left; font-size: 14.4px; }
+  table.data.init-table tr.total-row { background: var(--paper-2); }
   .card p, .card-outcome, .price-desc, .price-features li, .price-figures dd { overflow-wrap: anywhere; }
 }
