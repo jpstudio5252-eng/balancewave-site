@@ -260,6 +260,68 @@ table.data tbody th { font-weight: 600; color: var(--ink); background: #fbfcfc; 
 table.data tbody tr:last-child th, table.data tbody tr:last-child td { border-bottom: 0; }
 table.data td { color: var(--ink-soft); }
 
+.table-note { font-size: 13px; color: var(--muted); margin: 10px 0 0; }
+table.data td.num { text-align: right; white-space: nowrap; font-weight: 600; color: var(--ink); font-variant-numeric: tabular-nums; }
+table.data tr.total-row th, table.data tr.total-row td { background: var(--paper-2); font-weight: 700; color: var(--ink); }
+
+/* ---------- pricing ---------- */
+
+.price-grid { display: grid; grid-template-columns: 1fr; gap: 18px; margin: 0 0 6px; }
+@media (min-width: 820px) { .price-grid { grid-template-columns: repeat(3, 1fr); align-items: stretch; } }
+.price-card {
+  position: relative; display: flex; flex-direction: column;
+  background: #fff; border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 26px 24px 22px; box-shadow: var(--shadow);
+}
+.price-card--free { background: #fbfcfc; }
+.price-card--reco {
+  border: 1.5px solid var(--accent);
+  box-shadow: 0 2px 4px rgba(31, 111, 120, .08), 0 18px 40px rgba(31, 111, 120, .13);
+}
+.price-label {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 8px;
+  font-size: 13.6px; font-weight: 700; color: var(--accent-dark); margin: 0 0 10px;
+}
+.price-badge {
+  font-size: 11.4px; font-weight: 700; letter-spacing: .04em;
+  background: var(--accent); color: #fff; padding: 3px 9px; border-radius: 999px;
+}
+.price-badge--soft { background: var(--accent-soft); color: var(--accent-dark); }
+.price-amount {
+  font-size: clamp(26px, 3vw, 31px); font-weight: 700; letter-spacing: -.02em;
+  color: var(--ink); line-height: 1.2; margin: 0 0 6px; display: flex; align-items: baseline;
+}
+.price-prefix { font-size: 14px; font-weight: 700; color: var(--muted); margin-right: 7px; }
+.price-terms { font-size: 12.9px; color: var(--muted); font-weight: 600; margin: 0 0 12px; }
+.price-desc { font-size: 14.3px; color: var(--ink-soft); margin: 0 0 14px; line-height: 1.68; }
+.price-figures {
+  margin: 0 0 14px; padding: 12px 14px; background: var(--paper-2);
+  border-radius: var(--radius-sm); display: grid; gap: 6px;
+}
+.price-figures div { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; }
+.price-figures dt { font-size: 12.6px; color: var(--muted); font-weight: 600; flex: 0 0 auto; }
+.price-figures dd { margin: 0; font-size: 13.6px; font-weight: 700; color: var(--ink); text-align: right; }
+.price-features { list-style: none; margin: 0 0 16px; padding: 0; display: grid; gap: 8px; font-size: 14.2px; color: var(--ink-soft); }
+.price-features li { position: relative; padding-left: 20px; line-height: 1.6; }
+.price-features li::before { content: "\2713"; position: absolute; left: 0; top: 0; color: var(--accent); font-weight: 700; }
+.price-foot {
+  margin: auto 0 12px; padding-top: 10px; border-top: 1px dashed var(--line);
+  font-size: 12.8px; color: var(--muted);
+}
+.btn--block { width: 100%; justify-content: center; }
+
+table.data.cmp { min-width: 680px; }
+table.data.cmp td.c { text-align: center; white-space: nowrap; }
+table.data.cmp td.yes { color: var(--accent-dark); font-weight: 700; }
+table.data.cmp td.na { color: #a9b6b6; }
+table.data.cmp .cmp-reco { background: #f2faf9; }
+table.data.cmp thead th.cmp-reco { background: var(--accent-soft); color: var(--accent-dark); }
+table.data tr.cmp-group th {
+  background: #fff; font-size: 12.4px; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--accent-dark); padding: 18px 14px 8px; border-bottom: 1px solid var(--accent-soft);
+}
+table.data.cmp thead th .price-badge { margin-left: 6px; }
+
 .status { font-size: 12.6px; font-weight: 700; padding: 3px 9px; border-radius: 999px; white-space: nowrap; display: inline-block; }
 .status[data-state="미충족"] { background: #f7e5e2; color: var(--danger); }
 .status[data-state="부분"] { background: #f6efe0; color: #86601f; }
